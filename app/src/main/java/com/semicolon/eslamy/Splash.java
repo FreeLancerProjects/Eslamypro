@@ -20,7 +20,6 @@ public class Splash extends Activity implements AnimationListener {
     Animation animSlideUp;
     TextView arabic;
     TextView english;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
