@@ -52,8 +52,8 @@ public class Splash extends Activity implements AnimationListener {
 
         // check for zoom in animation
 
-         /*   Intent i =new Intent(this,HomeActivity.class);
-            startActivity(i);*/
+          Intent i =new Intent(this,HomeActivity.class);
+            startActivity(i);
 
 
     }
