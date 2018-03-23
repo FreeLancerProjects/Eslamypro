@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://G:\android\AndroidStudioProjects\Eslamypro\Eslamy.iml" filepath="G:\android\AndroidStudioProjects\Eslamypro\Eslamy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Eslamypro.iml" filepath="$PROJECT_DIR$/Eslamypro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eslamy.iml" filepath="$PROJECT_DIR$/Eslamy.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
