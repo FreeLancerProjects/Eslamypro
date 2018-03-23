@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 
 public class Splash extends Activity implements AnimationListener {
 
@@ -21,10 +23,10 @@ public class Splash extends Activity implements AnimationListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
+        Calligrapher calligrapher=new Calligrapher(this);
+        calligrapher.setFont(this,"JannaLT-Regular.ttf",true);
         imgPoster =  findViewById(R.id.imgLogo);
         arabic=findViewById(R.id.txtarabic);
         english=findViewById(R.id.txtenglish);
