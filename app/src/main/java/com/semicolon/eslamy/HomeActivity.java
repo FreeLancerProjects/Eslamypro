@@ -1,5 +1,6 @@
 package com.semicolon.eslamy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -36,7 +37,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId())
         {
             case R.id.other:
-                Toast.makeText(this, "other", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(HomeActivity.this,OtherActivity.class);
+                startActivity(intent);
                 break;
             case R.id.simple_call:
                 Toast.makeText(this, "simple call", Toast.LENGTH_SHORT).show();
