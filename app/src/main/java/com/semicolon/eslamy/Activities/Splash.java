@@ -1,4 +1,4 @@
-package com.semicolon.eslamy;
+package com.semicolon.eslamy.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,9 +7,10 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.semicolon.eslamy.R;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
 

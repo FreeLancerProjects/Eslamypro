@@ -1,4 +1,4 @@
-package com.semicolon.eslamy;
+package com.semicolon.eslamy.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import com.semicolon.eslamy.R;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
 

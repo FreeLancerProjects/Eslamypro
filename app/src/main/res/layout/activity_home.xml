@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.semicolon.eslamy.HomeActivity"
+    tools:context="com.semicolon.eslamy.Activities.HomeActivity"
     android:fillViewport="true"
     android:fitsSystemWindows="true"
     android:background="@drawable/background"
