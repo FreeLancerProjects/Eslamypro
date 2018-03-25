@@ -47,8 +47,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
                 break;
             case R.id.detail_call:
-                Toast.makeText(this, "detail call", Toast.LENGTH_SHORT).show();
-
+                Intent intent3 = new Intent(HomeActivity.this,LanguageActivity.class);
+                startActivity(intent3);
                 break;
         }
     }

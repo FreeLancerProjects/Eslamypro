@@ -56,6 +56,7 @@ public class Splash extends Activity implements AnimationListener {
 
           Intent i =new Intent(this,HomeActivity.class);
             startActivity(i);
+            finish();
 
 
     }

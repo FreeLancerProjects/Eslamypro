@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Eslamy</string>
-    <string name="choose_language">إختار اللغة</string>
+    <string name="choose_language">Choose language</string>
+    <string name="connection">check network connection</string>
 </resources>
