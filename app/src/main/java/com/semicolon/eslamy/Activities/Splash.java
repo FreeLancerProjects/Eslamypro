@@ -9,9 +9,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.semicolon.eslamy.R;
-
 import me.anwarshahriar.calligrapher.Calligrapher;
 
 

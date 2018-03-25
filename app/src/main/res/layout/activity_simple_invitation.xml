@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.semicolon.eslamy.Activities.OtherActivity"
     android:fitsSystemWindows="true"
     android:fillViewport="true"
     android:background="@drawable/background"
@@ -23,8 +22,6 @@
             android:layout_width="match_parent"
             app:contentInsetStart="0dp"
             app:contentInsetLeft="0dp"
-            app:contentInsetRight="0dp"
-            app:contentInsetEnd="0dp"
             android:id="@+id/mToolBar">
             <RelativeLayout
                 android:layout_height="match_parent"
