@@ -57,7 +57,7 @@ public class VideoActivity extends AppCompatActivity {
                     List<OthersModel> othersModelList = response.body();
                     if (othersModelList.size()>0)
                     {
-                        Intent intent = new Intent();
+                        Intent intent = new Intent(VideoActivity.this,WebViewActivity.class);
                         intent.putExtra("url",othersModelList.get(0).getLink());
                         startActivity(intent);
                     }else

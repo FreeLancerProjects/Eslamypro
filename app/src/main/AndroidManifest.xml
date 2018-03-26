@@ -26,7 +26,8 @@
             android:name=".Activities.SimpleInvitation"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Activities.LanguageActivity" />
-        <activity android:name=".Activities.VideoActivity"></activity>
+        <activity android:name=".Activities.VideoActivity" />
+        <activity android:name=".Activities.WebViewActivity"></activity>
     </application>
 
 </manifest>
