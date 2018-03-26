@@ -3,5 +3,6 @@
     <string name="app_name">إسلامي</string>
     <string name="choose_language">إختر اللغة</string>
     <string name="connection">تحقق من الاتصال بالانترنت</string>
+    <string name="novideo">لاتوجد فيديوهات لعرضها</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.semicolon.eslamy.Activities;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -33,6 +34,7 @@ public class LanguageActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private List<LangModel> langModelList;
     private ProgressBar progBar;
+    private String type;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +43,9 @@ public class LanguageActivity extends AppCompatActivity {
         calligrapher.setFont(this,"JannaLT-Regular.ttf",true);
 
         initView();
+        getDataFromIntent();
     }
+
 
     private void initView() {
 
@@ -57,6 +61,19 @@ public class LanguageActivity extends AppCompatActivity {
 
 
     }
+    private void getDataFromIntent() {
+
+        Intent intent = getIntent();
+        if (intent!=null)
+        {
+            if (intent.hasExtra("type"))
+            {
+                type = intent.getStringExtra("type");
+                Toast.makeText(this, ""+type, Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
     private void displayLanguages() {
         Retrofit retrofit = Api.getClient();
         Service service = retrofit.create(Service.class);
@@ -85,7 +102,11 @@ public class LanguageActivity extends AppCompatActivity {
 
     public void setPos(int pos)
     {
-        Toast.makeText(this, ""+langModelList.get(pos).getName(), Toast.LENGTH_SHORT).show();
+        String lang_id = langModelList.get(pos).getId();
+        Intent intent = new Intent(LanguageActivity.this,VideoActivity.class);
+        intent.putExtra("type",type);
+        intent.putExtra("id",lang_id);
+        startActivity(intent);
     }
     @Override
     protected void onStart() {
