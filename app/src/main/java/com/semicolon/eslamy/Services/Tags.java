@@ -5,6 +5,6 @@ package com.semicolon.eslamy.Services;
  */
 
 public class Tags {
-    public static String baseUrl ="http://islam.semicolonsoft.com/";
-    public static String imgPath ="http://islam.semicolonsoft.com/";
+    public static String baseUrl ="http://islam.tansiq.net/";
+    public static String imgPath ="http://islam.tansiq.net/";
 }

@@ -20,7 +20,12 @@ public interface Service {
     @GET("api/languages")
     Call<List<LangModel>>DisplayLanguage();
 
+
     @FormUrlEncoded
     @POST("api/getLanguage")
-    Call<List<OthersModel>>DisplayOthersData(@Field("id") String id,@Field("type")String type);
+    Call<List<OthersModel>>DisplayDetails(@Field("id") String id,@Field("type")String type);
+
+   /* @GET("api/questions")
+    Call<List<QuesModel>>DisplayQuestion();*/
+
 }

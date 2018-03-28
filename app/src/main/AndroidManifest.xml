@@ -22,12 +22,10 @@
         </activity>
         <activity android:name=".Activities.HomeActivity" />
         <activity android:name=".Activities.OtherActivity" />
-        <activity
-            android:name=".Activities.SimpleInvitation"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Activities.LanguageActivity" />
         <activity android:name=".Activities.VideoActivity" />
-        <activity android:name=".Activities.WebViewActivity"></activity>
+        <activity android:name=".Activities.WebViewActivity" />
+        <activity android:name=".Activities.DetailsActivity"></activity>
     </application>
 
 </manifest>

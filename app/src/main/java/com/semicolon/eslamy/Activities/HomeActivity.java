@@ -1,11 +1,10 @@
 package com.semicolon.eslamy.Activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.semicolon.eslamy.R;
 
@@ -43,11 +42,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.simple_call:
-                Toast.makeText(this, "simple call", Toast.LENGTH_SHORT).show();
-
+                Intent intent2 = new Intent(HomeActivity.this,LanguageActivity.class);
+                intent2.putExtra("type","4");
+                startActivity(intent2);
                 break;
             case R.id.detail_call:
                 Intent intent3 = new Intent(HomeActivity.this,LanguageActivity.class);
+                intent3.putExtra("type","5");
                 startActivity(intent3);
                 break;
         }

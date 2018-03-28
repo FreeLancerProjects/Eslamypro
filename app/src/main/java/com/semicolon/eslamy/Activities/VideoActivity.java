@@ -43,11 +43,11 @@ public class VideoActivity extends AppCompatActivity {
         }
     }
 
-    private void DisplayVideos()
+    private void DisplayDetails()
     {
         Retrofit retrofit = Api.getClient();
         Service service = retrofit.create(Service.class);
-        Call<List<OthersModel>> call = service.DisplayOthersData(id,type);
+        Call<List<OthersModel>> call = service.DisplayDetails(id,type);
 
         call.enqueue(new Callback<List<OthersModel>>() {
             @Override
@@ -79,6 +79,6 @@ public class VideoActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        DisplayVideos();
+        DisplayDetails();
     }
 }

@@ -65,6 +65,11 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent4);
                 break;
             case R.id.rl5:
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Hey, download this app!");
+                startActivity(shareIntent.createChooser(shareIntent,"Share via"));
                 break;
             case R.id.rl6:
                 break;

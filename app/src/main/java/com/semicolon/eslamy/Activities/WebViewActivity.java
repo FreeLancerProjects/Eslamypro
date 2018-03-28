@@ -44,4 +44,10 @@ public class WebViewActivity extends AppCompatActivity {
             Toast.makeText(this, ""+url, Toast.LENGTH_SHORT).show();
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

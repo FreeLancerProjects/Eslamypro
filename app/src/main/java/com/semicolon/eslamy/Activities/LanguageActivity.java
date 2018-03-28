@@ -103,10 +103,13 @@ public class LanguageActivity extends AppCompatActivity {
     public void setPos(int pos)
     {
         String lang_id = langModelList.get(pos).getId();
-        Intent intent = new Intent(LanguageActivity.this,VideoActivity.class);
+        Intent intent = new Intent(LanguageActivity.this,DetailsActivity.class);
         intent.putExtra("type",type);
         intent.putExtra("id",lang_id);
+
+        Toast.makeText(this, "id"+lang_id+"\n"+type, Toast.LENGTH_SHORT).show();
         startActivity(intent);
+        finish();
     }
     @Override
     protected void onStart() {
