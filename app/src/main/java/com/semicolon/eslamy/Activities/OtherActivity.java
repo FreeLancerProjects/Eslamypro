@@ -61,6 +61,7 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.rl3:
                 Intent intent3 = new Intent(OtherActivity.this,LanguageActivity.class);
+                intent3.putExtra("type","question");
                 startActivity(intent3);
                 break;
             case R.id.rl4:

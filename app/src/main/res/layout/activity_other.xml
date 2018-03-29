@@ -33,25 +33,26 @@
             <TextView
                 android:id="@+id/txt_advistors"
                 android:background="@drawable/detail_item_bg"
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:padding="8dp"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:clickable="true"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
                 android:text="أرقام الدعاه"
                 android:drawableRight="@drawable/phone"
                 android:layout_alignParentRight="true"
-                android:layout_gravity="right"
                 android:gravity="center"
+                android:layout_centerVertical="true"
                 />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             >
             <RelativeLayout
                 android:id="@+id/rl1"
@@ -176,7 +177,7 @@
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="شير للطتبيق"
+                    android:text="مشاركة التطبيق"
                     android:textSize="14sp"
                     android:gravity="center"
                     android:clickable="false"
@@ -200,7 +201,7 @@
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="أتصل بنا"
+                    android:text="إتصل بنا"
                     android:textSize="14sp"
                     android:gravity="center"
                     android:clickable="false"

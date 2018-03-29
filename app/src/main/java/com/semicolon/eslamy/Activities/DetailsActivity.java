@@ -30,9 +30,10 @@ public class DetailsActivity extends AppCompatActivity {
     private RecyclerView recView;
     private RecyclerView.LayoutManager manager;
     private RecyclerView.Adapter adapter;
+    private ProgressBar progBar;
+
     private String id,type;
     private List<OthersModel> othersModelList;
-    private ProgressBar progBar;
 
 
     @Override
@@ -104,7 +105,7 @@ public class DetailsActivity extends AppCompatActivity {
                     }else
                     {
                         progBar.setVisibility(View.GONE);
-                        Toast.makeText(DetailsActivity.this, R.string.novideo, Toast.LENGTH_LONG).show();
+                        //Toast.makeText(DetailsActivity.this, R.string.novideo, Toast.LENGTH_LONG).show();
                     }
                 }
             }

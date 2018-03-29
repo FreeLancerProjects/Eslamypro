@@ -3,6 +3,7 @@ package com.semicolon.eslamy.Services;
 import com.semicolon.eslamy.Models.AdvisorsModel;
 import com.semicolon.eslamy.Models.LangModel;
 import com.semicolon.eslamy.Models.OthersModel;
+import com.semicolon.eslamy.Models.QuesModel;
 
 import java.util.List;
 
@@ -26,9 +27,14 @@ public interface Service {
     @POST("api/getLanguage")
     Call<List<OthersModel>>DisplayDetails(@Field("id") String id,@Field("type")String type);
 
-   /* @GET("api/questions")
-    Call<List<QuesModel>>DisplayQuestion();*/
-   @GET("api/advisors")
+    @GET("api/questions")
+    Call<List<QuesModel>>DisplayQuestion();
+
+    @FormUrlEncoded
+    @POST("api/getAnswer")
+    Call<QuesModel>DisplayAnswer(@Field("lang") String lang_id,@Field("id")String question_id);
+
+    @GET("api/advisors")
    Call<List<AdvisorsModel>>Displayadvisors();
 
 

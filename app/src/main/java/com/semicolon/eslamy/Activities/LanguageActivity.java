@@ -69,7 +69,7 @@ public class LanguageActivity extends AppCompatActivity {
             if (intent.hasExtra("type"))
             {
                 type = intent.getStringExtra("type");
-                Toast.makeText(this, ""+type, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, ""+type, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -102,20 +102,35 @@ public class LanguageActivity extends AppCompatActivity {
 
     public void setPos(int pos)
     {
-        String lang_id = langModelList.get(pos).getId();
-        Intent intent = new Intent(LanguageActivity.this,DetailsActivity.class);
-        intent.putExtra("type",type);
-        intent.putExtra("id",lang_id);
+        if (type.equals("question"))
+        {
+            String lang_id = langModelList.get(pos).getId();
+            Intent intent = new Intent(LanguageActivity.this,QuestionActivity.class);
+            intent.putExtra("id",lang_id);
 
-        Toast.makeText(this, "id"+lang_id+"\n"+type, Toast.LENGTH_SHORT).show();
-        startActivity(intent);
-        finish();
+            //Toast.makeText(this, "id"+lang_id+"\n"+type, Toast.LENGTH_SHORT).show();
+            startActivity(intent);
+            finish();
+        }else
+            {
+                String lang_id = langModelList.get(pos).getId();
+                Intent intent = new Intent(LanguageActivity.this,DetailsActivity.class);
+                intent.putExtra("type",type);
+                intent.putExtra("id",lang_id);
+
+               // Toast.makeText(this, "id"+lang_id+"\n"+type, Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+                finish();
+            }
+
     }
+
     @Override
     protected void onStart() {
         super.onStart();
         displayLanguages();
     }
+
 
 
 }

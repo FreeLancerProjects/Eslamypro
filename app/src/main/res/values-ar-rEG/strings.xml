@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">إسلامي</string>
+    <string name="app_name">علمني الإسلام</string>
     <string name="choose_language">إختر اللغة</string>
     <string name="connection">تحقق من الاتصال بالانترنت</string>
     <string name="novideo">لاتوجد فيديوهات لعرضها</string>
+    <string name="question">أسئلة مكررة</string>
 
 </resources>
