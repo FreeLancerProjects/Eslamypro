@@ -41,7 +41,7 @@ public class WebViewActivity extends AppCompatActivity {
         if (intent!=null)
         {
             url=intent.getStringExtra("url");
-            Toast.makeText(this, ""+url, Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(this, ""+url, Toast.LENGTH_SHORT).show();
         }
     }
 

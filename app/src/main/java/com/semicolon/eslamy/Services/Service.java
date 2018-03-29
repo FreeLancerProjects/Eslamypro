@@ -1,5 +1,6 @@
 package com.semicolon.eslamy.Services;
 
+import com.semicolon.eslamy.Models.AboutUsModel;
 import com.semicolon.eslamy.Models.AdvisorsModel;
 import com.semicolon.eslamy.Models.LangModel;
 import com.semicolon.eslamy.Models.OthersModel;
@@ -35,8 +36,10 @@ public interface Service {
     Call<QuesModel>DisplayAnswer(@Field("lang") String lang_id,@Field("id")String question_id);
 
     @GET("api/advisors")
-   Call<List<AdvisorsModel>>Displayadvisors();
+    Call<List<AdvisorsModel>>Displayadvisors();
 
+    @GET("api/aboutus")
+    Call<List<AboutUsModel>>Displayaboutus();
 
 
 }

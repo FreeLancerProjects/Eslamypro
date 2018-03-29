@@ -28,7 +28,8 @@
         <activity android:name=".Activities.DetailsActivity" />
         <activity android:name=".Activities.AdvistorsActivity" />
         <activity android:name=".Activities.QuestionActivity" />
-        <activity android:name=".Activities.AnswerActivity"></activity>
+        <activity android:name=".Activities.AnswerActivity" />
+        <activity android:name=".Activities.AboutUsActivity"></activity>
     </application>
 
 </manifest>

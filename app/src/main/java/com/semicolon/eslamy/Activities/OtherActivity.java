@@ -77,6 +77,8 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(shareIntent.createChooser(shareIntent,"Share via"));
                 break;
             case R.id.rl6:
+                Intent intent6 = new Intent(OtherActivity.this,AboutUsActivity.class);
+                startActivity(intent6);
                 break;
 
             case R.id.txt_advistors:
