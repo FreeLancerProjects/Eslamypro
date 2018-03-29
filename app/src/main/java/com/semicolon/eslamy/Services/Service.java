@@ -1,5 +1,6 @@
 package com.semicolon.eslamy.Services;
 
+import com.semicolon.eslamy.Models.AdvisorsModel;
 import com.semicolon.eslamy.Models.LangModel;
 import com.semicolon.eslamy.Models.OthersModel;
 
@@ -27,5 +28,9 @@ public interface Service {
 
    /* @GET("api/questions")
     Call<List<QuesModel>>DisplayQuestion();*/
+   @GET("api/advisors")
+   Call<List<AdvisorsModel>>Displayadvisors();
+
+
 
 }

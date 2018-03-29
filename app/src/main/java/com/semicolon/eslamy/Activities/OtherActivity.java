@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.semicolon.eslamy.R;
 
@@ -13,6 +14,7 @@ import me.anwarshahriar.calligrapher.Calligrapher;
 public class OtherActivity extends AppCompatActivity implements View.OnClickListener{
 
     private RelativeLayout quran,aslamt,qustion,mohammed,about,share;
+    private TextView advistors;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
         mohammed = findViewById(R.id.rl4);
         share    = findViewById(R.id.rl5);
         about    = findViewById(R.id.rl6);
+        advistors=findViewById(R.id.txt_advistors);
 
         quran.setOnClickListener(this);
         aslamt.setOnClickListener(this);
@@ -38,6 +41,7 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
         mohammed.setOnClickListener(this);
         share.setOnClickListener(this);
         about.setOnClickListener(this);
+        advistors.setOnClickListener(this);
     }
 
 
@@ -72,6 +76,11 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(shareIntent.createChooser(shareIntent,"Share via"));
                 break;
             case R.id.rl6:
+                break;
+
+            case R.id.txt_advistors:
+                Intent intent5 = new Intent(OtherActivity.this,AdvistorsActivity.class);
+                startActivity(intent5);
                 break;
         }
     }

@@ -25,7 +25,8 @@
         <activity android:name=".Activities.LanguageActivity" />
         <activity android:name=".Activities.VideoActivity" />
         <activity android:name=".Activities.WebViewActivity" />
-        <activity android:name=".Activities.DetailsActivity"></activity>
+        <activity android:name=".Activities.DetailsActivity" />
+        <activity android:name=".Activities.AdvistorsActivity"></activity>
     </application>
 
 </manifest>
