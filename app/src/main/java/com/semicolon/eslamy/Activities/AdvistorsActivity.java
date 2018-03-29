@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 import com.semicolon.eslamy.Adapters.AdvistorsAdapter;
 import com.semicolon.eslamy.Models.AdvisorsModel;
-import com.semicolon.eslamy.Models.LangModel;
 import com.semicolon.eslamy.R;
 import com.semicolon.eslamy.Services.Api;
 import com.semicolon.eslamy.Services.Service;
@@ -25,7 +24,6 @@ import me.anwarshahriar.calligrapher.Calligrapher;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class AdvistorsActivity extends AppCompatActivity {
 
