@@ -9,6 +9,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -35,6 +36,7 @@ public class LanguageActivity extends AppCompatActivity {
     private List<LangModel> langModelList;
     private ProgressBar progBar;
     private String type;
+    private ImageView home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,7 @@ public class LanguageActivity extends AppCompatActivity {
 
     private void initView() {
 
+        home=findViewById(R.id.img_home);
         progBar = findViewById(R.id.progBar);
         progBar.getIndeterminateDrawable().setColorFilter(ContextCompat.getColor(this,R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         langModelList = new ArrayList<>();
@@ -59,6 +62,13 @@ public class LanguageActivity extends AppCompatActivity {
         adapter = new LangAdapter(langModelList,this);
         lang_recView.setAdapter(adapter);
 
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(LanguageActivity.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     private void getDataFromIntent() {

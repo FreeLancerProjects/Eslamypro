@@ -9,6 +9,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -31,7 +32,7 @@ public class DetailsActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager manager;
     private RecyclerView.Adapter adapter;
     private ProgressBar progBar;
-
+    private ImageView home;
     private String id,type;
     private List<OthersModel> othersModelList;
 
@@ -59,6 +60,7 @@ public class DetailsActivity extends AppCompatActivity {
 
     private void initView() {
 
+        home=findViewById(R.id.img_home);
         progBar = findViewById(R.id.progBar);
         progBar.getIndeterminateDrawable().setColorFilter(ContextCompat.getColor(this,R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
 
@@ -70,6 +72,14 @@ public class DetailsActivity extends AppCompatActivity {
         recView.setHasFixedSize(true);
         adapter = new DetailsAdapter(othersModelList,this);
         recView.setAdapter(adapter);
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(DetailsActivity.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void setPos(int pos)

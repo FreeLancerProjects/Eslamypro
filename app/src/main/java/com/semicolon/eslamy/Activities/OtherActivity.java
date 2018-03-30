@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -15,6 +16,7 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
 
     private RelativeLayout quran,aslamt,qustion,mohammed,about,share;
     private TextView advistors;
+    private ImageView home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,7 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
         share    = findViewById(R.id.rl5);
         about    = findViewById(R.id.rl6);
         advistors=findViewById(R.id.txt_advistors);
-
+        home     =findViewById(R.id.img_home);
         quran.setOnClickListener(this);
         aslamt.setOnClickListener(this);
         qustion.setOnClickListener(this);
@@ -42,6 +44,7 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
         share.setOnClickListener(this);
         about.setOnClickListener(this);
         advistors.setOnClickListener(this);
+        home.setOnClickListener(this);
     }
 
 
@@ -84,6 +87,10 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
             case R.id.txt_advistors:
                 Intent intent5 = new Intent(OtherActivity.this,AdvistorsActivity.class);
                 startActivity(intent5);
+                break;
+            case R.id.img_home:
+                Intent intent7 = new Intent(OtherActivity.this,HomeActivity.class);
+                startActivity(intent7);
                 break;
         }
     }

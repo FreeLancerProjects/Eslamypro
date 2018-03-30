@@ -5,5 +5,15 @@
     <string name="connection">تحقق من الاتصال بالانترنت</string>
     <string name="novideo">لاتوجد فيديوهات لعرضها</string>
     <string name="question">أسئلة مكررة</string>
+    <string name="Simple_Invitation">الدعوة البسيطة</string>
+    <string name="Detailed_Invitation">الدعوة التفصيلية</string>
+    <string name="Other">أخرى</string>
+    <string name="Guides_Numbers">أرقام الدعاه</string>
+    <string name="Quran_interpretation">القرأن وتفسيرة</string>
+    <string name="became_Muslim">هكذا اسلمت</string>
+    <string name="Frequently_Questions">أسئلة مكررة</string>
+    <string name="Call_Us">إتصل بنا</string>
+    <string name="Share_App">مشاركة التطبيق</string>
+    <string name="Muhammad_is_the_Messenger_of_Allah">محمد ص</string>
 
 </resources>

@@ -1,7 +1,17 @@
 <resources>
-    <string name="app_name">Eslamy</string>
+    <string name="app_name">GUIDE ME TO ISLAM</string>
     <string name="choose_language">Choose language</string>
     <string name="connection">check network connection</string>
     <string name="novideo">There are no video to display</string>
     <string name="question">Questions</string>
+    <string name="Simple_Invitation"> Simple Invitation</string>
+    <string name="Detailed_Invitation">Detailed Invitation</string>
+    <string name="Other">Other</string>
+    <string name="Guides_Numbers">Guides Numbers</string>
+    <string name="Quran_interpretation">Quran and interpretation</string>
+    <string name="became_Muslim"> So I became a Muslim</string>
+    <string name="Frequently_Questions"> Frequently Questions</string>
+    <string name="Call_Us"> Call Us</string>
+    <string name="Share_App">Share App</string>
+    <string name="Muhammad_is_the_Messenger_of_Allah"> Muhammad Messenger of Allah</string>
 </resources>

@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -34,6 +35,7 @@ public class QuestionActivity extends AppCompatActivity {
     private ProgressBar progBar;
     private String lang_id;
     private List<QuesModel> quesModelList;
+    private ImageView home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +60,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     private void initView() {
 
+        home=findViewById(R.id.img_home);
         quesModelList  = new ArrayList<>();
         progBar = findViewById(R.id.progBar);
         progBar.getIndeterminateDrawable().setColorFilter(ContextCompat.getColor(this,R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
@@ -69,7 +72,13 @@ public class QuestionActivity extends AppCompatActivity {
         recView.setHasFixedSize(true);
         adapter = new QusetionAdapter(quesModelList,this);
         recView.setAdapter(adapter);
-
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(QuestionActivity.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void DisplayQuestions()
