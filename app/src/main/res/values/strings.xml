@@ -8,10 +8,11 @@
     <string name="Detailed_Invitation">Detailed Invitation</string>
     <string name="Other">Other</string>
     <string name="Guides_Numbers">Guides Numbers</string>
-    <string name="Quran_interpretation">Quran and interpretation</string>
-    <string name="became_Muslim"> So I became a Muslim</string>
-    <string name="Frequently_Questions"> Frequently Questions</string>
-    <string name="Call_Us"> Call Us</string>
-    <string name="Share_App">Share App</string>
-    <string name="Muhammad_is_the_Messenger_of_Allah"> Muhammad Messenger of Allah</string>
+    <string name="Quran_interpretation">Holy quran</string>
+    <string name="became_Muslim">New Muslim</string>
+    <string name="Frequently_Questions">FAQ</string>
+    <string name="Call_Us">Contacts</string>
+    <string name="Share_App">Share</string>
+    <string name="Muhammad_is_the_Messenger_of_Allah">Prophet muhammed</string>
+    <string name="Guide_me">Guide me to islam</string>
 </resources>

@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:textSize="14dp"
+                android:textSize="15dp"
                 android:clickable="true"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
@@ -57,19 +57,20 @@
             >
             <RelativeLayout
                 android:id="@+id/rl1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/item"
                 android:clickable="true"
                 android:layout_centerHorizontal="true"
                 >
                 <TextView
+                    android:id="@+id/hq"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/Quran_interpretation"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
@@ -89,8 +90,8 @@
 
             <RelativeLayout
                 android:id="@+id/rl2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/item"
                 android:clickable="true"
@@ -98,11 +99,12 @@
                 android:layout_alignParentLeft="true"
                 >
                 <TextView
+                    android:id="@+id/nm"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/became_Muslim"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
@@ -112,8 +114,8 @@
 
             <RelativeLayout
                 android:id="@+id/rl3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/item"
                 android:clickable="true"
@@ -122,11 +124,12 @@
                 android:layout_below="@+id/rl2"
                 >
                 <TextView
+                    android:id="@+id/faq"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/Frequently_Questions"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
@@ -137,8 +140,8 @@
 
             <RelativeLayout
                 android:id="@+id/rl4"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/item"
                 android:clickable="true"
@@ -148,11 +151,12 @@
 
                 >
                 <TextView
+                    android:id="@+id/pm"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/Muhammad_is_the_Messenger_of_Allah"
-                    android:textSize="11sp"
+                    android:textSize="15sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
@@ -163,8 +167,8 @@
 
             <RelativeLayout
                 android:id="@+id/rl5"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/item"
                 android:clickable="true"
@@ -175,11 +179,12 @@
 
                 >
                 <TextView
+                    android:id="@+id/sh"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/Share_App"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
@@ -190,8 +195,8 @@
 
             <RelativeLayout
                 android:id="@+id/rl6"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:background="@drawable/item"
                 android:clickable="true"
                 android:layout_below="@+id/rl5"
@@ -199,11 +204,12 @@
                 android:layout_marginTop="-50dp"
                 >
                 <TextView
+                    android:id="@+id/cu"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/Call_Us"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"

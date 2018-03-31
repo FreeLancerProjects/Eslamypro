@@ -1,8 +1,9 @@
 package com.semicolon.eslamy.Activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -10,19 +11,20 @@ import android.widget.TextView;
 
 import com.semicolon.eslamy.R;
 
-import me.anwarshahriar.calligrapher.Calligrapher;
+import java.util.Locale;
 
 public class OtherActivity extends AppCompatActivity implements View.OnClickListener{
 
     private RelativeLayout quran,aslamt,qustion,mohammed,about,share;
     private TextView advistors;
     private ImageView home;
+    private TextView hq,pm,faq,nm,cu,sh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other);
-        Calligrapher calligrapher=new Calligrapher(this);
-        calligrapher.setFont(this,"JannaLT-Regular.ttf",true);
+        /*Calligrapher calligrapher=new Calligrapher(this);
+        calligrapher.setFont(this,"JannaLT-Regular.ttf",true);*/
         initView();
         
     }
@@ -45,6 +47,24 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
         about.setOnClickListener(this);
         advistors.setOnClickListener(this);
         home.setOnClickListener(this);
+
+        hq = findViewById(R.id.hq);
+        nm = findViewById(R.id.nm);
+        faq= findViewById(R.id.faq);
+        cu = findViewById(R.id.cu);
+        sh = findViewById(R.id.sh);
+        pm = findViewById(R.id.pm);
+
+        Typeface typeface  = Typeface.createFromAsset(getAssets(),"JannaLT-Regular.ttf");
+        if (Locale.getDefault().equals("ar"))
+        {
+            hq.setTypeface(typeface);
+            nm.setTypeface(typeface);
+            faq.setTypeface(typeface);
+            cu.setTypeface(typeface);
+            sh.setTypeface(typeface);
+            pm.setTypeface(typeface);
+        }
     }
 
 
