@@ -54,6 +54,7 @@ public class QuestionActivity extends AppCompatActivity {
             if (intent.hasExtra("id"))
             {
                 lang_id = intent.getStringExtra("id");
+                Toast.makeText(this, "langId"+lang_id, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -85,7 +86,7 @@ public class QuestionActivity extends AppCompatActivity {
     {
         Retrofit retrofit = Api.getClient();
         Service service = retrofit.create(Service.class);
-        Call<List<QuesModel>> call = service.DisplayQuestion();
+        Call<List<QuesModel>> call = service.DisplayQuestion(lang_id);
         call.enqueue(new Callback<List<QuesModel>>() {
             @Override
             public void onResponse(Call<List<QuesModel>> call, Response<List<QuesModel>> response) {
@@ -111,33 +112,14 @@ public class QuestionActivity extends AppCompatActivity {
     public void setPos(int pos)
     {
         QuesModel quesModel = quesModelList.get(pos);
-        DisplayAnswer(quesModel.getId());
+        Intent intent = new Intent(QuestionActivity.this,AnswerActivity.class);
+        intent.putExtra("data",quesModel);
+        startActivity(intent);
+        //DisplayAnswer(quesModel.getId());
 
     }
 
-    private void DisplayAnswer(int ques_id)
-    {
-        Retrofit retrofit = Api.getClient();
-        Service service = retrofit.create(Service.class);
-        Call<QuesModel> call = service.DisplayAnswer(lang_id,String.valueOf(ques_id));
-        call.enqueue(new Callback<QuesModel>() {
-            @Override
-            public void onResponse(Call<QuesModel> call, Response<QuesModel> response) {
-                if (response.isSuccessful())
-                {
-                    Intent intent = new Intent(QuestionActivity.this,AnswerActivity.class);
-                    intent.putExtra("data",response.body());
-                    startActivity(intent);
-                }
-            }
 
-            @Override
-            public void onFailure(Call<QuesModel> call, Throwable t) {
-                Log.e("error",t.getMessage());
-                Toast.makeText(QuestionActivity.this, getString(R.string.connection), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
     @Override
     protected void onStart() {
         super.onStart();

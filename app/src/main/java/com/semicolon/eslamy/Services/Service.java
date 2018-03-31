@@ -28,8 +28,9 @@ public interface Service {
     @POST("api/getLanguage")
     Call<List<OthersModel>>DisplayDetails(@Field("id") String id,@Field("type")String type);
 
-    @GET("api/questions")
-    Call<List<QuesModel>>DisplayQuestion();
+    @FormUrlEncoded
+    @POST("api/questions")
+    Call<List<QuesModel>>DisplayQuestion(@Field("lang") String lang_id);
 
     @FormUrlEncoded
     @POST("api/getAnswer")

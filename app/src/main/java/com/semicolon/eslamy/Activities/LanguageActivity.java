@@ -118,9 +118,7 @@ public class LanguageActivity extends AppCompatActivity {
             Intent intent = new Intent(LanguageActivity.this,QuestionActivity.class);
             intent.putExtra("id",lang_id);
 
-            //Toast.makeText(this, "id"+lang_id+"\n"+type, Toast.LENGTH_SHORT).show();
             startActivity(intent);
-            finish();
         }else
             {
                 String lang_id = langModelList.get(pos).getId();
@@ -128,9 +126,7 @@ public class LanguageActivity extends AppCompatActivity {
                 intent.putExtra("type",type);
                 intent.putExtra("id",lang_id);
 
-               // Toast.makeText(this, "id"+lang_id+"\n"+type, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
-                finish();
             }
 
     }

@@ -84,9 +84,18 @@ public class DetailsActivity extends AppCompatActivity {
 
     public void setPos(int pos)
     {
-        Intent intent = new Intent(DetailsActivity.this,WebViewActivity.class);
-                        intent.putExtra("url",othersModelList.get(pos).getLink());
-                        startActivity(intent);
+        if (type.equals("4"))
+        {
+            Intent intent = new Intent(DetailsActivity.this,SimpleInvitationActivity.class);
+            //intent.putExtra("url",othersModelList.get(pos).getLink());
+            startActivity(intent);
+        }else
+            {
+                Intent intent = new Intent(DetailsActivity.this,WebViewActivity.class);
+                intent.putExtra("url",othersModelList.get(pos).getLink());
+                startActivity(intent);
+            }
+
     }
 
     private void DisplayDetails()

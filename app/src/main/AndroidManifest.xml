@@ -24,13 +24,13 @@
         <activity android:name=".Activities.HomeActivity" />
         <activity android:name=".Activities.OtherActivity" />
         <activity android:name=".Activities.LanguageActivity" />
-        <activity android:name=".Activities.VideoActivity" />
+        <activity android:name=".Activities.SimpleInvitationActivity" />
         <activity android:name=".Activities.WebViewActivity" />
         <activity android:name=".Activities.DetailsActivity" />
         <activity android:name=".Activities.AdvistorsActivity" />
         <activity android:name=".Activities.QuestionActivity" />
         <activity android:name=".Activities.AnswerActivity" />
-        <activity android:name=".Activities.AboutUsActivity"></activity>
+        <activity android:name=".Activities.AboutUsActivity" />
     </application>
 
 </manifest>
