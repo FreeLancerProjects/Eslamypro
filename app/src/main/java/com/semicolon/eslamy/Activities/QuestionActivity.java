@@ -54,7 +54,7 @@ public class QuestionActivity extends AppCompatActivity {
             if (intent.hasExtra("id"))
             {
                 lang_id = intent.getStringExtra("id");
-                Toast.makeText(this, "langId"+lang_id, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "langId"+lang_id, Toast.LENGTH_SHORT).show();
             }
         }
     }
