@@ -13,6 +13,8 @@ import com.semicolon.eslamy.R;
 
 import java.util.Locale;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class OtherActivity extends AppCompatActivity implements View.OnClickListener{
 
     private RelativeLayout quran,aslamt,qustion,mohammed,about,share;
@@ -23,8 +25,8 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other);
-        /*Calligrapher calligrapher=new Calligrapher(this);
-        calligrapher.setFont(this,"JannaLT-Regular.ttf",true);*/
+        Calligrapher calligrapher=new Calligrapher(this);
+        calligrapher.setFont(this,"JannaLT-Regular.ttf",true);
         initView();
         
     }

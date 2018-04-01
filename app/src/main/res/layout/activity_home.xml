@@ -18,7 +18,7 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/logo"
             />
         <TextView
@@ -53,22 +53,142 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                >
+                <RelativeLayout
+                    android:id="@+id/detail_call"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/item"
+                    android:clickable="true"
+                    android:layout_gravity="left"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/di"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="الدعوة التفصيلية"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Detailed Invitation"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:background="#e0e0e0"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/simple_call"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/item"
+                    android:clickable="true"
+                    android:layout_gravity="right"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/txt_si"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="الدعوة البسيطة"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:textColor="@color/colorPrimary"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Summary"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:background="#e0e0e0"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+
+
+                    />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            >
             <RelativeLayout
                 android:id="@+id/other"
-                android:layout_width="105dp"
-                android:layout_height="105dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/item"
-                android:layout_alignParentLeft="true"
                 android:clickable="true"
-                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+
                 >
+
                 <TextView
                     android:id="@+id/txt_other"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="@string/Other"
+                    android:text="أخرى"
                     android:textSize="14sp"
                     android:gravity="center"
                     android:clickable="false"
@@ -78,58 +198,27 @@
 
                     />
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/simple_call"
-                android:layout_width="105dp"
-                android:layout_height="105dp"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/item"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
-                android:clickable="true"
-                android:layout_marginTop="5dp"
-
-
-                >
-                <TextView
-                    android:id="@+id/txt_si"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/Simple_Invitation"
-                    android:textSize="14sp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:clickable="false"
-                    android:longClickable="false"
-                    android:textColor="@color/colorPrimary"/>
-            </RelativeLayout>
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/detail_call"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
-            android:background="@drawable/item"
-            android:layout_gravity="center_horizontal"
-            android:clickable="true"
-
-            >
             <TextView
-                android:id="@+id/di"
-                android:layout_width="80dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/Detailed_Invitation"
-                android:textStyle="bold"
-                android:textSize="14sp"
+                android:text="@string/Other"
+                android:textSize="12sp"
                 android:gravity="center"
-                android:textColor="@color/colorPrimary"
                 android:clickable="false"
                 android:longClickable="false"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:background="#e0e0e0"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+
+
+
                 />
-        </RelativeLayout>
+        </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>

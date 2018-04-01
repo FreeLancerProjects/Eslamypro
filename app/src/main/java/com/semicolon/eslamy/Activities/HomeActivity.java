@@ -12,6 +12,8 @@ import com.semicolon.eslamy.R;
 
 import java.util.Locale;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
     RelativeLayout other,simple_call,detail_call;
     TextView txt_other,txt_si,txt_di,en_txt,ar_txt;
@@ -19,9 +21,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        /*Calligrapher calligrapher=new Calligrapher(this);
+        Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"JannaLT-Regular.ttf",true);
-*/
         initView();
     }
 

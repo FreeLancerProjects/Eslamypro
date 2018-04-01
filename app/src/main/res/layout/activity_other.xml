@@ -53,31 +53,54 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             >
-            <RelativeLayout
-                android:id="@+id/rl1"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/item"
-                android:clickable="true"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_centerHorizontal="true"
+
                 >
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/item"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+
+                    >
+                    <TextView
+                        android:id="@+id/hq"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="القرآن وتفسيرة"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+
+                </RelativeLayout>
                 <TextView
-                    android:id="@+id/hq"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="@string/Quran_interpretation"
-                    android:textSize="15sp"
+                    android:text="Holy Quran"
+                    android:textSize="11sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
                     android:textStyle="bold"
-                    android:textColor="@color/colorPrimary"/>
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:background="#e0e0e0"
 
-            </RelativeLayout>
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+
 
             <ImageView
                 android:layout_width="100dp"
@@ -88,135 +111,260 @@
                 android:layout_centerInParent="true"
                 />
 
-            <RelativeLayout
-                android:id="@+id/rl2"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/item"
-                android:clickable="true"
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
                 >
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/item"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/nm"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="هكذا أصبحت مسلم"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+                </RelativeLayout>
                 <TextView
-                    android:id="@+id/nm"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="@string/became_Muslim"
-                    android:textSize="15sp"
+                    android:text="New Muslim"
+                    android:textSize="12sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
                     android:textStyle="bold"
-                    android:textColor="@color/colorPrimary"/>
-            </RelativeLayout>
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:singleLine="true"
+                    android:background="#e0e0e0"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
 
-            <RelativeLayout
-                android:id="@+id/rl3"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/item"
-                android:clickable="true"
-                android:layout_marginTop="30dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@+id/rl2"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/ll1"
+
                 >
+                <RelativeLayout
+                    android:id="@+id/rl3"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/item"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/faq"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="أسئلة مكررة"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+
+                </RelativeLayout>
                 <TextView
-                    android:id="@+id/faq"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="@string/Frequently_Questions"
-                    android:textSize="15sp"
+                    android:text="FAQ"
+                    android:textSize="12sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
                     android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:background="#e0e0e0"
+
                     android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
 
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl4"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/item"
-                android:clickable="true"
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
-
+                android:layout_marginRight="5dp"
                 >
+                <RelativeLayout
+                    android:id="@+id/rl4"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/item"
+                    android:clickable="true"
+                    android:layout_gravity="right"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/pm"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="محمد ص"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+
+                </RelativeLayout>
                 <TextView
-                    android:id="@+id/pm"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="@string/Muhammad_is_the_Messenger_of_Allah"
-                    android:textSize="15sp"
+                    android:text="Prophet muhamed"
+                    android:textSize="12sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
                     android:textStyle="bold"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:background="#e0e0e0"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
                     android:textColor="@color/colorPrimary"/>
 
-            </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout
-                android:id="@+id/rl5"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/item"
-                android:clickable="true"
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_marginTop="30dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
-                android:layout_below="@+id/rl4"
-
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/ll4"
                 >
+                <RelativeLayout
+                    android:id="@+id/rl5"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/item"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/sh"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="مشاركة التطبيق"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+
+                </RelativeLayout>
                 <TextView
-                    android:id="@+id/sh"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="@string/Share_App"
-                    android:textSize="15sp"
+                    android:text="Share"
+                    android:textSize="12sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
                     android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:background="#e0e0e0"
                     android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
 
-            </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/rl6"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:background="@drawable/item"
-                android:clickable="true"
-                android:layout_below="@+id/rl5"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/ll5"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="-50dp"
                 >
+                <RelativeLayout
+                    android:id="@+id/rl6"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/item"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+
+                    >
+                    <TextView
+                        android:id="@+id/cu"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="إتصل بنا"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+
+                </RelativeLayout>
                 <TextView
-                    android:id="@+id/cu"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="@string/Call_Us"
-                    android:textSize="15sp"
+                    android:text="Contacts"
+                    android:textSize="12sp"
                     android:gravity="center"
                     android:clickable="false"
                     android:longClickable="false"
                     android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:background="#e0e0e0"
                     android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
 
-            </RelativeLayout>
         </RelativeLayout>
 
     </LinearLayout>
