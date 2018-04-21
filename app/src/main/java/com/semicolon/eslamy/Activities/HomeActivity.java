@@ -48,8 +48,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         if (Locale.getDefault().equals("ar"))
         {
-
-
             txt_si.setTypeface(typeface);
             txt_other.setTypeface(typeface);
             txt_di.setTypeface(typeface);

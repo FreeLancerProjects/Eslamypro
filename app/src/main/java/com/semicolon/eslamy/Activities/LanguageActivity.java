@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
@@ -56,7 +57,7 @@ public class LanguageActivity extends AppCompatActivity {
         progBar.getIndeterminateDrawable().setColorFilter(ContextCompat.getColor(this,R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         langModelList = new ArrayList<>();
         lang_recView = findViewById(R.id.lang_recView);
-        manager = new GridLayoutManager(this,3);
+        manager = new LinearLayoutManager(this);
         lang_recView.setLayoutManager(manager);
         lang_recView.setHasFixedSize(true);
         adapter = new LangAdapter(langModelList,this);

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
@@ -67,7 +68,7 @@ public class DetailsActivity extends AppCompatActivity {
 
         othersModelList = new ArrayList<>();
         recView = findViewById(R.id.recView);
-        manager = new GridLayoutManager(this,2);
+        manager = new LinearLayoutManager(this);
         recView.setLayoutManager(manager);
         recView.setHasFixedSize(true);
         adapter = new DetailsAdapter(othersModelList,this);

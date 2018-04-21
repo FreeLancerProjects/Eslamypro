@@ -17,8 +17,7 @@ import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class OtherActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private RelativeLayout quran,aslamt,qustion,mohammed,about,share;
-    private TextView advistors;
+    private RelativeLayout quran,aslamt,qustion,mohammed,about,share,advistors;
     private ImageView home;
     private TextView hq,pm,faq,nm,cu,sh;
     @Override
