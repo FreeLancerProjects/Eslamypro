@@ -48,48 +48,6 @@
                 android:textStyle="bold" />-->
         </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/txt_advistors"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/detail_item_bg"
-            android:clickable="true"
-
-            >
-
-            <TextView
-                android:id="@+id/hqg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:gravity="center"
-                android:longClickable="false"
-                android:text=" ارقام الدعاه"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_alignParentRight="true"
-                android:paddingRight="25dp"
-                />
-            <TextView
-                android:paddingLeft="25dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignBaseline="@id/hqg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="false"
-                android:gravity="center"
-                android:longClickable="false"
-                android:singleLine="true"
-                android:text="Guides Numbers "
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp"
-
-                android:textStyle="bold" />
-        </RelativeLayout>
 
 
         <RelativeLayout
@@ -311,6 +269,48 @@
 
         </RelativeLayout>
 
+        <RelativeLayout
+            android:id="@+id/txt_advistors"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/detail_item_bg"
+            android:clickable="true"
+
+            >
+
+            <TextView
+                android:id="@+id/hqg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center"
+                android:longClickable="false"
+                android:text=" ارقام الدعاه"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:paddingRight="25dp"
+                />
+            <TextView
+                android:paddingLeft="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBaseline="@id/hqg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:gravity="center"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:text="Guides Numbers "
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rl6"

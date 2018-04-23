@@ -14,7 +14,7 @@
         android:layout_marginTop="-100dp"
         android:layout_gravity="center_horizontal"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo1" />
     <TextView
         android:id="@+id/txtarabic"
         android:layout_width="wrap_content"
